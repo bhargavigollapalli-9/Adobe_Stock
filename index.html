@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stock photos, royalty-free images, graphics, vectors videos | Adobe Stock</title>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+    	var list = ["https://as.ftcdn.net/v1/pics/home/hero-images/May22/cd8f044b84ea9b0b950722a9c0530689ffcc294d.homepage-hero-5.webp","https://as.ftcdn.net/v1/pics/home/hero-images/May22/b40de163a8d629e88ca5e3d4bc6f0c452a730c9e.homepage-hero-4.webp","https://as.ftcdn.net/v1/pics/home/hero-images/May22/faf3cf26eec08e49d808c06635ffa09305fb461c.homepage-hero-3.webp","https://as.ftcdn.net/v1/pics/home/hero-images/May22/5f549a71595c5151c8fd6baa08a449fe4394d39c.homepage-hero-2.webp","https://as.ftcdn.net/v1/pics/home/hero-images/May22/73b242973287469c51b487f54bc689bcb40d4510.homepage-hero-1.webp"];
+    	function backgroundChange(){
+    		var x = document.getElementsByClassName("background")[0];
+    		y = Math.floor(Math.random()*6);
+    		x.style.background = 'url('+list[y]+')';
+    	}
+    	function openNav(){
+    		if(document.getElementById('nav-right-side').style.display != 'grid'){
+    			document.getElementById('menu-icon').src = "close.png";
+	    		var x = document.getElementsByClassName("nav-div")[0];
+	    		x.style.display = "grid";
+	    		x.style.position = 'absolute';
+	    		x.style.left = '20';
+	    		x.style.background = '#333333';
+	    		x.style.width = '50%';
+	    		document.getElementById('nav-right-side').style.display = 'grid';
+	    		var items = document.getElementsByClassName('items');
+	    		for (var i = items.length - 1; i >= 0; i--) {
+	    			items[i].style.padding = '10px';
+	    			items[i].style.borderBottom = '1px solid white';
+	    			if(i==0){
+	    				items[i].style.paddingTop = '10px';
+	    			}
+	    		}
+	    	}
+	    	else{
+	    		document.getElementById('menu-icon').src = "https://previews.123rf.com/images/fokaspokas/fokaspokas1809/fokaspokas180900164/108564673-hamburger-menu-web-icon-white-icon-with-shadow-on-transparent-background.jpg";
+	    		document.getElementsByClassName("nav-div")[0].style.display = "none";
+	    		document.getElementById('nav-right-side').style.display = 'block';
+	    	}
+    	}
+    </script>
+</head>
+<body style="background-color:#f2f2f2;" onload="backgroundChange()">
+	<header>
+		<nav class="nav1">
+			<div class="menu" onclick="openNav()">
+				<img src="https://as.ftcdn.net/v1/pics/all/default/f53a065feaef6edf1c0da97be741c32a21551565.stock_logo_2020_dark.svg" height="25px" width="25px" id="menu-icon">
+			</div>
+			<div class="nav-div">
+				<a href="#" class="items">Photos</a>
+				<a href="#" class="items">Illustratios</a>
+				<a href="#" class="items">Vectors</a>
+				<a href="#" class="items">Videos</a>
+				<a href="#" class="items">Audio</a>
+				<a href="#" class="items">Templates</a>
+				<a href="#" class="items">3D</a>
+				<a href="#" class="items">Premium</a>
+				<a href="#" class="items">Editorial</a>
+				<span style="float: right;padding-right: 20px" id="nav-right-side">
+				<a href="#"  class="items" id="items1">Sales:888-649-2990</a>
+				<a href="#"  class="items" id="items1">Sell</a>
+				<a href="#"  class="items" id="items1">Pricing</a>
+				<a href="#"  class="items" id="items1">Sign in</a>
+				</span>
+			</div>
+		</nav>
+		<div class="background">
+			<img src="icon.svg" class="main-logo">
+			<p class="sub-head">Find the perfect stock asset for your next creative project</p>
+			<div class="search-box">
+				<select style="padding-left:10px;font-size: 15px;border:none;background-color:#e6e6e6;">
+				<option>All</option>
+				<option>Images</option>
+				<option>Videos</option>
+				<option>Audio</option>
+				<option selected>Templates</option>
+				<option>3D</option>
+				<option>Premium</option>
+				<option>Editorial</option>
+				</select>
+				<input type="" name="" placeholder="Search" autofocus class="input-search">
+			</div>
+			<p class="last">by Gregory Lee</p>
+		</div>
+		<div class="head-bottom">
+			<p class="bottom-text">Get 10 free Adobe Stock images.<span class="start-now">Start now</span></p>
+		</div>
+		<div class="mob-head-bottom">Get 10 free images.</div>
+	</header>
+
+
+	<section>
+		<div class="head2">CURATED ASSET COLLECTIONS</div>
+		<div><p class="description">Explore diverse collections of our most<br/> incredible high-resolution, royalty-free, stock<br/> assets</p></div>
+		<div class="line"></div>
+
+		<div class="card-div">
+			<div class="card">
+				<img src="https://as.ftcdn.net/v1/pics/home/discover_collections/22May/71a6dc9bb71cd3b82804cdaafb35a7ccda8bb93a.photos.webp" class="card-image">
+				<div class="card-heading">Stock Photos</div>
+				<div class="card-content">Beautiful and inspiring royalty-free stock images.</div>
+			</div>
+			<div class="card">
+				<img src="https://as.ftcdn.net/v1/pics/home/discover_collections/22May/cdd69ebb178a88e8c667ca4350d14bd01edf752e.premium.webp" class="card-image">
+				<div class="card-heading">Premium stock images</div>
+				<div class="card-content">High-impact,royalty-free stock photos for powerful storytelling.</div>
+			</div>
+			<div class="card">
+				<img src="https://as.ftcdn.net/v1/pics/home/discover_collections/22May/f9faa24c4b7122c64881e38444392279f2be0c3d.video.webp" class="card-image">
+				<div class="card-heading">Stock video footage</div>
+				<div class="card-content">Stunning 4K and HD stock video clips for any motion project.</div>
+			</div>
+		</div>
+		<div class="card-div">
+			<div class="card">
+				<img src="https://as.ftcdn.net/v1/pics/home/discover_collections/22May/761815b5ee8f7861486a054be9dd9796dca2723b.templates.webp" class="card-image">
+				<div class="card-heading">Royalty-free templates</div>
+				<div class="card-content">Made for Adode InDesign, Photoshop, illustrator, and more.</div>
+			</div>
+			<div class="card">
+				<img src="https://as.ftcdn.net/v1/pics/home/discover_collections/22May/2a848308255382d52eeb8111cd1b7e1a7488f051.vector.webp" class="card-image">
+				<div class="card-heading">Vector art and illustrations</div>
+				<div class="card-content">Royalty-free stock illustrations and vector art.</div>
+			</div>
+			<div class="card">
+				<img src="https://as.ftcdn.net/v1/pics/home/discover_collections/22May/fee82b7d5971cc17a10945bdafdd04071d81870d.audio.webp" class="card-image">
+				<div class="card-heading">Stock music and audio</div>
+				<div class="card-content">Discover a wide range of amazing royalty-free music.</div>
+			</div>
+		</div>
+		<div class="mob-view">
+			<div class="work">
+				<div><p class="work-faster">WORK FASTER</p></div>
+				<div class="below-work-faster">Find the perfect high-res, royalty-free, stock image to enhance your next creatsive project.<br/>All from within your Adobe Creative Cloud apps.
+				</div>
+				<div class="line"></div>
+				<div style="text-align: center;margin-bottom: 30px;"><img src="https://as.ftcdn.net/v1/pics/home/showcased_artists/Ukraine/c90985eb316573fabef05354d171fb0b166b954a.ukraine_hero_orig.jpg" class="mob-image-size"></div>
+				<div class="feature-image-div">
+					<div style="color: #8e8e8e;font-size: 1.5rem;padding-bottom: 30px;">Preview watermarked images inside your designs first. Then license, access and manage them directly within Photoshop, InDesign, Illustrator, and other Adobe desktop apps.</div>
+					<div class="tab-view"><img src="in-app.webp" class="mob-image-size"></div>
+				</div>
+			</div>
+
+			<div>
+				<div class="artist">ARTISTS RULE</div>
+				<div class="artist-sub">Get inspired by these Adobe Stock contributors</div>
+				<div class="line"></div>
+				<div class="card-div">
+					<div class="contributor">
+						<img src="https://as.ftcdn.net/v1/pics/home/showcased_artists/Ukraine/241e38cd248e332223ef3ad5f3d33838aa3ad302.201773432.webp" style="border-radius: 50%">
+						<div class="name">Diversity photos</div>
+						<div class="job">Photographer</div>
+					</div>
+					<div class="contributor">
+						<img src="https://as.ftcdn.net/v1/pics/home/showcased_artists/Ukraine/7d57472609a4f02d81df18607049ce515254b534.206920896.webp" style="border-radius: 50%">
+						<div class="name">Cesar Santillán</div>
+						<div class="job">Illustartor</div>
+					</div>
+					<div class="contributor">
+						<img src="https://as.ftcdn.net/v1/pics/home/showcased_artists/Ukraine/5e13ef4946c0983fbf2d4f80de15d68f9d9d0775.208209735.webp" style="border-radius: 50%">
+						<div class="name">Carlos david</div>
+						<div class="job">Photographer</div>
+					</div>
+					<div class="contributor">
+						<img src="https://as.ftcdn.net/v1/pics/home/showcased_artists/Ukraine/616f161390b704c7f0fc78126bf10c3732367bbd.206044015.webp" style="border-radius: 50%">
+						<div class="name">Osato Emumwen</div>
+						<div class="job">Illustrator</div>
+					</div>
+				</div>
+				<div style="text-align: center;padding: 30px 0px 30px 0px;color: #8e8e8e;font-size: 1.5rem">Earn royalties doing what you love</div>
+				<div>
+					<a href="#" style="text-decoration: none;">
+						<div class="contributor-button">Become a contributor</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-last">
+			<div style="font-size:23px;padding-bottom: 4px;">Search smarter</div>
+			<div style="padding-bottom:30px;font-style: italic;">Check out these popular categories.</div>
+			<div class="lists">
+				<div class="elements">
+					<div class="space"><a href="#" class="members">Animals</a></div>
+					<div class="space"><a href="#" class="members">Drinks</a></div>
+					<div class="space"><a href="#" class="members">Food</a></div>
+					<div class="space"><a href="#" class="members">Industry</a></div>
+					<div class="space"><a href="#" class="members">People</a></div>
+					<div class="space"><a href="#" class="members">Science</a></div>
+					<div class="space"><a href="#" class="members">Technology</a></div>
+					<div class="space"><a href="#" class="members">News</a></div>
+				</div>
+				<div class="elements">
+					<div class="space"><a href="" class="members">Buildings and Architecture</a></div>
+					<div class="space"><a href="" class="members">The Environment</a></div>
+					<div class="space"><a href="" class="members">Graphic Resources</a></div>
+					<div class="space"><a href="" class="members">Landscapes</a></div>
+					<div class="space"><a href="" class="members">Plants and flowers</a></div>
+					<div class="space"><a href="" class="members">Social Issues</a></div>
+					<div class="space"><a href="" class="members">Transport</a></div>
+					<div class="space"><a href="" class="members">Entertainment</a></div>
+				</div>
+				<div class="elements">
+					<div class="space"><a href="#" class="members">Business</a></div>
+					<div class="space"><a href="" class="members">States of mind</a></div>
+					<div class="space"><a href="" class="members">Hobbies and leisure</a></div>
+					<div class="space"><a href="" class="members">Lifestyle</a></div>
+					<div class="space"><a href="" class="members">Culture and Region</a></div>
+					<div class="space"><a href="" class="members">Sports</a></div>
+					<div class="space"><a href="" class="members">Travel</a></div>
+					<div class="space"><a href="" class="members">Sport News</a></div>
+				</div>
+				<div></div>
+				<div>
+					<div style="text-align: center;"><img src="last.png" class="last-img"></div>
+					<div style="width:296px;text-align: center;font-size: 18px;line-height: 25px;margin: 0px auto;">Beautiful fonts, anywhere you need them. Find great type for web, print, and beyond with Adobe Fonts.</div>
+					<div class="learn-more">Learn more</div>
+				</div>
+			</div>
+		</div>
+		<div class="last-one">
+			<a href="" class="members-last">Change region</a>/
+			<a href="" class="members-last">License terms</a>/
+			<a href="" class="members-last">Learn & Support</a>/
+			<a href="" class="members-last">Company</a>/
+			<a href="" class="members-last">Sell Images</a>/
+			<a href="" class="members-last">Enterprise</a>/
+			<span style="float: right;">
+				<span class="members-last">2020 Adobe.All rights reserved.</span>/
+				<span><a href="" class="members-last">Privacy</a></span>/
+				<span><a href="" class="members-last">Terms of use</a></span>/
+				<span><a href="" class="members-last">Cookie preferences</a></span>/
+				<span><a href="" class="members-last">Ad choice</a></span>
+			</span>
+		</div>
+	</section>
+</body>
+</html>
